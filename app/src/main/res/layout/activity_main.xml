@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/second"
+    tools:context=".MainActivity">
+
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+    <TextView
+        android:id="@+id/tv_main_page"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Knowledge"
+        android:textSize="30dp"
+        android:textStyle="italic"
+        android:textColor="@color/black"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/tv_student_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="STUDENT"
+        android:layout_below="@+id/tv_main_page"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="5dp"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:background="@drawable/et_border_transparent_bg"
+        android:textStyle="italic"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/tv_teacher_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TEACHER"
+        android:layout_marginTop="40dp"
+        android:textAlignment="center"
+        android:layout_below="@+id/tv_student_main"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textStyle="italic"
+        android:textColor="@color/black"
+        android:background="@drawable/et_border_transparent_bg"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

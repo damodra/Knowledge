@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/second"
+    tools:context=".TechRegisterActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <EditText
+            android:id="@+id/etUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="User First Name"
+            android:padding="10dp"
+            android:inputType="textPersonName"
+            android:singleLine="true"
+            android:background="@drawable/et_border_transparent_bg"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+
+            />
+        <EditText
+            android:id="@+id/etUserLastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="User Last Name"
+            android:padding="10dp"
+            android:inputType="textPersonName"
+            android:singleLine="true"
+            android:layout_below="@+id/etUserName"
+            android:background="@drawable/et_border_transparent_bg"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            />
+        <EditText
+            android:id="@+id/etMobileNO"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="User Mobile No"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:layout_below="@+id/etUserLastName"
+            android:background="@drawable/et_border_transparent_bg"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            />
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="User Password"
+            android:padding="10dp"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:layout_below="@+id/etMobileNO"
+            android:background="@drawable/et_border_transparent_bg"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            >
+        </EditText>
+
+        <EditText
+            android:id="@+id/etRepassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="User RePassword"
+            android:padding="10dp"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:layout_below="@+id/etPassword"
+            android:background="@drawable/et_border_transparent_bg"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            />
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="User Mail..."
+            android:padding="10dp"
+            android:inputType="textEmailAddress"
+            android:singleLine="true"
+            android:layout_below="@+id/etRepassword"
+            android:background="@drawable/et_border_transparent_bg"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/etEmail"
+            android:layout_marginTop="15dp">
+
+            <Button
+                android:id="@+id/btn_teacher_login"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Register"
+                android:textSize="16sp"
+                android:layout_marginLeft="100dp"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:background="@drawable/round"/>
+
+            <Button
+                android:id="@+id/btn_teacher_register"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Login"
+                android:textSize="16sp"
+                android:layout_marginLeft="20dp"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:background="@drawable/round"/>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
